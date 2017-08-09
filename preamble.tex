@@ -1,0 +1,93 @@
+\usepackage{amsmath,amssymb,amsthm,mathtools,paralist,bm,mathrsfs}
+\usepackage{
+  nameref, % \nameref
+  hyperref, % \autoref
+  cleveref, % \cref
+}
+
+\usepackage{notation/modes}
+
+\usepackage[french,english]{babel}
+\usepackage[autostyle]{csquotes}
+
+% \usepackage{unicode-math}
+% \setmainfont{Minion Pro}
+% \setmathfont{Latin Modern Math}
+% \setmonofont{Iosevka Slab}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+% \usepackage{pgfplots}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{innercustomthm}{Problem}
+\newenvironment{xprob}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{exa}[thm]{Example}
+
+\numberwithin{equation}{section}
+
+\newcommand{\comment}[1]{}
+\newcommand{\uncomment}[1]{#1}
+
+\newenvironment{solu}{\begin{proof}[Solution]}{\end{proof}}
+
+% notations
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\newcommand{\uto}{\stackrel{u}{\to}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand*{\mybox}[1]{\framebox{#1}}
+\renewcommand\enquote[1]{\foreignquote{french}{#1}}
+
+\newcommand\SetForm[2]{\left\{ #1 : #2 \right\}}
+\newcommand*\conj[1]{\overline{#1}}
+\newcommand*\mean[1]{\bar{#1}}
+
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\Arg}{Arg}
+\DeclareMathOperator{\C}{\mathbb{C}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\N}{\mathbb{N}}
+\DeclareMathOperator{\Q}{\mathbb{Q}}
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\Zp}{\mathbb{Z}^+}
+\DeclareMathOperator{\T}{\mathbb{T}}
+
+\DeclareMathOperator{\cT}{\mathcal{T}}
+\DeclareMathOperator{\Mero}{Mer}
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Ima}{Im}
+
+\DeclareMathOperator{\fin}{fin}
+\DeclareMathOperator{\std}{std}
+\DeclareMathOperator{\product}{prod}
+
+\DeclareMathOperator{\dist}{dist}
+
+\DeclareMathOperator{\esssup}{esssup}
+
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+
+\oddsidemargin-1mm
+\evensidemargin-0mm
+\textwidth6.5in
+\topmargin-15mm
+%\headsep25pt
+\textheight8.75in
+\footskip27pt
+
+\pagestyle{headings}
